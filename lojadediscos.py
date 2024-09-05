@@ -39,25 +39,22 @@ def vender_disco(loja):
     except (IndexError, ValueError):
         print("Escolha inválida.")
 
-def main():
-    loja = []
-    while True:
-        print("\n1. Adicionar Disco")
-        print("2. Listar Discos")
-        print("3. Vender Disco")
-        print("4. Sair")
-        opcao = input("Escolha uma opção: ")
+loja = []
+while True:
+    print("\n1. Adicionar Disco")
+    print("2. Listar Discos")
+    print("3. Vender Disco")
+    print("4. Sair")
+    opcao = input("Escolha uma opção: ")
 
-        if opcao == '1':
-            adicionar_disco(loja)
-        elif opcao == '2':
-            listar_discos(loja)
-        elif opcao == '3':
-            vender_disco(loja)
-        elif opcao == '4':
-            break
-        else:
-            print("Opção inválida.")
+    if opcao == '1':
+        adicionar_disco(loja)
+    elif opcao == '2':
+        listar_discos(loja)
+    elif opcao == '3':
+        vender_disco(loja)
+    elif opcao == '4':
+        break
+    else:
+        print("Opção inválida.")
 
-if __name__ == "__main__":
-    main()
